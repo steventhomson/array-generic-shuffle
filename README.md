@@ -31,7 +31,7 @@ To get a nice even ditribution when generating a random number within a specific
 var n = Math.floor(Math.random() * (max - min)) + min;
 ```
 
-For our purposes *min* is **always** 0 so the previous line becomes:
+For our purposes **min** is *always* 0, so the previous line becomes:
 
 ```js
 var n = Math.floor(Math.random() * max);
@@ -44,14 +44,7 @@ var n = Math.random() * max | 0;
 ```
 
 ## References
-<ul>
-    <li>[Fisher-Yates Shuffle][]</li>
-    <li>[Mike Bostock's Analysis][]</li>
-    <li>[MDN - Math.random()][]</li>
-    <li>[JSPerf][]</li>
-</ul>
-
-[Fisher-Yates Shuffle]: http://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle
-[Mike Bostock's Analysis]: http://bost.ocks.org/mike/shuffle
-[MDN - Math.random()]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
-[JSPerf]: http://jsperf.com/math-floor-vs-math-round-vs-parseint/136
+* [Fisher-Yates Shuffle](http://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle)
+* [Mike Bostock's Analysis](http://bost.ocks.org/mike/shuffle)
+* [MDN - Math.random()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random)
+* [JSPerf](http://jsperf.com/math-floor-vs-math-round-vs-parseint/136)
