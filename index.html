@@ -18,7 +18,11 @@
 <body>
     <script>
         console.log(
-            [0, 1, 2, 3, 4, 5, 6, 7, 8, 9].shuffle()
+            'standard', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9].shuffle()
+        );
+        console.log(
+            'generic',
+            Array.shuffle([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
         );
     </script>
 </body>

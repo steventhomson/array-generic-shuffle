@@ -11,6 +11,7 @@
         Object = global.Object,
         TypeError = global.TypeError;
 
+    // add standard
     if (!Array.prototype.shuffle) {
         Array.prototype.shuffle = function () {
             var elms, len, idx, tmp;
@@ -34,6 +35,16 @@
             }
 
             return elms;
+        }
+    }
+
+    // add generic
+    if (!Array.shuffle) {
+        var shuffle = Array.prototype.shuffle;
+        if (typeof shuffle === 'function') {
+            Array.shuffle = function () {
+                return shuffle.call.apply(shuffle, arguments);
+            };
         }
     }
 
